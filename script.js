@@ -210,6 +210,7 @@ function initSnakeGame() {
 
     if (state.snake.some((s) => s.x === head.x && s.y === head.y)) {
       state.running = false;
+      draw();
       return;
     }
 
