@@ -772,6 +772,14 @@ a:hover {
   margin: 12px 0;
 }
 
+.contact__grid > div {
+  min-width: 0;
+}
+
+.contact__grid a {
+  overflow-wrap: anywhere;
+}
+
 .link {
   color: var(--accent-2);
   font-weight: 600;

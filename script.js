@@ -28,12 +28,12 @@ function t(path, fallback = "") {
 }
 
 function buildMailto(address, subject, body) {
-  const params = new URLSearchParams();
+  const params = [];
   const safeSubject = subject || "";
   const safeBody = body ? body.replace(/\n/g, "\r\n") : "";
-  if (safeSubject) params.set("subject", safeSubject);
-  if (safeBody) params.set("body", safeBody);
-  const query = params.toString();
+  if (safeSubject) params.push(`subject=${encodeURIComponent(safeSubject)}`);
+  if (safeBody) params.push(`body=${encodeURIComponent(safeBody)}`);
+  const query = params.join("&");
   return query ? `mailto:${address}?${query}` : `mailto:${address}`;
 }
 
