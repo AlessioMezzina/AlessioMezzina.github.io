@@ -6,7 +6,11 @@ let particles = [];
 let w = window.innerWidth;
 let h = window.innerHeight;
 
-const COLORS = ["rgba(255,122,24,0.9)", "rgba(255,179,71,0.8)", "rgba(255,122,24,0.6)"];
+const COLORS = [
+  "rgba(31,58,87,0.35)",
+  "rgba(185,106,58,0.35)",
+  "rgba(15,27,45,0.2)"
+];
 
 function resize() {
   w = window.innerWidth;
@@ -16,13 +20,13 @@ function resize() {
 }
 
 function createParticles() {
-  const count = Math.min(70, Math.floor((w * h) / 26000));
+  const count = Math.min(60, Math.floor((w * h) / 38000));
   particles = Array.from({ length: count }, () => ({
     x: Math.random() * w,
     y: Math.random() * h,
-    vx: (Math.random() - 0.5) * 0.4,
-    vy: (Math.random() - 0.5) * 0.4,
-    r: Math.random() * 2 + 1,
+    vx: (Math.random() - 0.5) * 0.25,
+    vy: (Math.random() - 0.5) * 0.25,
+    r: Math.random() * 1.6 + 0.6,
     color: COLORS[Math.floor(Math.random() * COLORS.length)]
   }));
 }
@@ -38,9 +42,9 @@ function step() {
       const dx = p1.x - p2.x;
       const dy = p1.y - p2.y;
       const dist2 = dx * dx + dy * dy;
-      if (dist2 < 120 * 120) {
-        const alpha = 1 - dist2 / (120 * 120);
-        ctx.strokeStyle = `rgba(255,122,24,${alpha * 0.18})`;
+      if (dist2 < 140 * 140) {
+        const alpha = 1 - dist2 / (140 * 140);
+        ctx.strokeStyle = `rgba(31,58,87,${alpha * 0.12})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(p1.x, p1.y);
@@ -147,12 +151,12 @@ function initSnakeGame() {
   };
 
   const colors = {
-    bg: "#0b0f17",
-    grid: "rgba(255,140,50,0.1)",
-    snake: "rgba(255,140,50,0.9)",
-    head: "#ffb677",
-    food: "#4ade80",
-    text: "#e6eaf1"
+    bg: "#f7f4ee",
+    grid: "rgba(15,27,45,0.08)",
+    snake: "#1f3a57",
+    head: "#b96a3a",
+    food: "#3f8f4a",
+    text: "#0f1b2d"
   };
 
   function resizeBoard() {
@@ -259,10 +263,10 @@ function initSnakeGame() {
     });
 
     if (!state.running) {
-      ctx.fillStyle = "rgba(0,0,0,0.55)";
+      ctx.fillStyle = "rgba(15,27,45,0.45)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = colors.text;
-      ctx.font = "bold 22px 'Space Grotesk', sans-serif";
+      ctx.font = "bold 22px 'Fraunces', serif";
       ctx.textAlign = "center";
       ctx.fillText("Game Over - Start again", canvas.width / 2, canvas.height / 2);
     }
