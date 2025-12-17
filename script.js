@@ -5,12 +5,124 @@ const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)
 let particles = [];
 let w = window.innerWidth;
 let h = window.innerHeight;
+let translations = {};
+let currentLang = "en";
+let snakeRedraw = null;
+
+const LANGUAGE_STORAGE_KEY = "site-lang";
+const SUPPORTED_LANGS = ["en", "it"];
 
 const COLORS = [
   "rgba(31,58,87,0.35)",
   "rgba(185,106,58,0.35)",
   "rgba(15,27,45,0.2)"
 ];
+
+function getNestedValue(source, path) {
+  return path.split(".").reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : undefined), source);
+}
+
+function t(path, fallback = "") {
+  const value = getNestedValue(translations, path);
+  return value === undefined ? fallback : value;
+}
+
+function buildMailto(address, subject, body) {
+  const params = new URLSearchParams();
+  const safeSubject = subject || "";
+  const safeBody = body ? body.replace(/\n/g, "\r\n") : "";
+  if (safeSubject) params.set("subject", safeSubject);
+  if (safeBody) params.set("body", safeBody);
+  const query = params.toString();
+  return query ? `mailto:${address}?${query}` : `mailto:${address}`;
+}
+
+function applyTranslations() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const value = t(el.dataset.i18n);
+    if (value !== undefined) {
+      el.textContent = value;
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
+    const attr = el.dataset.i18nAttr;
+    const key = el.dataset.i18nAttrKey;
+    if (!attr || !key) return;
+    const value = t(key);
+    if (value !== undefined) {
+      el.setAttribute(attr, value);
+    }
+  });
+
+  document.querySelectorAll("[data-mailto]").forEach((el) => {
+    const address = el.dataset.mailtoAddress;
+    const key = el.dataset.mailto;
+    if (!address || !key) return;
+    const subject = t(`mailto.${key}.subject`, "");
+    const body = t(`mailto.${key}.body`, "");
+    el.setAttribute("href", buildMailto(address, subject, body));
+  });
+
+  const title = t("meta.title");
+  if (title) {
+    document.title = title;
+  }
+
+  document.documentElement.lang = currentLang;
+
+  if (snakeRedraw) {
+    snakeRedraw();
+  }
+}
+
+function updateLanguageButtons() {
+  document.querySelectorAll("[data-lang]").forEach((btn) => {
+    const isActive = btn.dataset.lang === currentLang;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+  });
+}
+
+async function loadTranslations(lang) {
+  const response = await fetch(`i18n/${lang}.json`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load translations for ${lang}`);
+  }
+  return response.json();
+}
+
+async function setLanguage(lang) {
+  const normalized = SUPPORTED_LANGS.includes(lang) ? lang : "en";
+  try {
+    translations = await loadTranslations(normalized);
+    currentLang = normalized;
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, currentLang);
+    applyTranslations();
+    updateLanguageButtons();
+  } catch (err) {
+    if (normalized !== "en") {
+      setLanguage("en");
+      return;
+    }
+    console.error(err);
+  }
+}
+
+function initI18n() {
+  document.querySelectorAll("[data-lang]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const lang = btn.dataset.lang;
+      if (lang && lang !== currentLang) {
+        setLanguage(lang);
+      }
+    });
+  });
+
+  const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+  const initial = SUPPORTED_LANGS.includes(stored) ? stored : "en";
+  setLanguage(initial);
+}
 
 function resize() {
   w = window.innerWidth;
@@ -268,7 +380,7 @@ function initSnakeGame() {
       ctx.fillStyle = colors.text;
       ctx.font = "bold 22px 'Fraunces', serif";
       ctx.textAlign = "center";
-      ctx.fillText("Game Over - Start again", canvas.width / 2, canvas.height / 2);
+      ctx.fillText(t("lab.gameOver", "Game Over - Start again"), canvas.width / 2, canvas.height / 2);
     }
   }
 
@@ -323,6 +435,8 @@ function initSnakeGame() {
   resizeBoard();
   bestEl.textContent = state.best;
   draw();
+  snakeRedraw = draw;
 }
 
+initI18n();
 initSnakeGame();

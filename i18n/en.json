@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Alessio Mezzina | AI Researcher & Data Scientist"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "publications": "Publications",
+    "contact": "Contact",
+    "email": "Email",
+    "cta": "Let's Talk",
+    "languageLabel": "Language selector"
+  },
+  "hero": {
+    "badge": "Generative AI / Metaheuristics / Optimization / Applied Research",
+    "subtitle": "Ph.D. candidate in AI & metaheuristics.",
+    "lede": "Ph.D. candidate at the University of Catania, supported by KOEXAI Srl. I design AI and optimization systems that translate research into reliable tools.",
+    "scheduleCall": "Schedule a call",
+    "viewPublications": "View publications",
+    "academicProfile": "Academic profile (DMI)",
+    "currentRoleLabel": "Current role",
+    "currentRoleTitle": "Ph.D. in Computer Science",
+    "currentRoleMeta": "University of Catania • Oct 2024 – Present",
+    "currentRoleLine1": "Ph.D. scholarship with KOEXAI Srl.",
+    "currentRoleLine2": "Research in generative AI and metaheuristic optimization.",
+    "chip1": "Generative AI",
+    "chip2": "Metaheuristics",
+    "chip3": "Optimization",
+    "chip4": "Applied Research",
+    "avatarAlt": "Portrait of Alessio Mezzina"
+  },
+  "about": {
+    "label": "About",
+    "body": "I am a researcher and builder focused on turning AI and metaheuristic methods into usable systems. I enjoy mentoring students, collaborating with industry, and presenting results at conferences. Outside the lab, I recharge with hiking and tabletop games.",
+    "chip1": "Generative AI",
+    "chip2": "Metaheuristics",
+    "chip3": "Optimization",
+    "chip4": "Data Science",
+    "chip5": "Applied Research",
+    "chip6": "Problem Solving",
+    "chip7": "Teaching & Mentoring",
+    "chip8": "Conference Organization"
+  },
+  "education": {
+    "label": "Education",
+    "heading": "Academic path grounded in AI and optimization.",
+    "phd": {
+      "title": "Ph.D. in Computer Science",
+      "meta": "University of Catania • Oct 2024 – Present",
+      "body": "AI and metaheuristics research with KOEXAI scholarship."
+    },
+    "abilitation": {
+      "title": "Teaching Abilitation Class A041",
+      "meta": "University of Catania • Jun 2024 – Dec 2024 • 10/10"
+    },
+    "msc": {
+      "title": "M.Sc. in Computer Science — Data Science",
+      "meta": "University of Catania • Oct 2022 – Jul 2024 • 110/110 cum laude",
+      "body": "Thesis: Real Time Adaptive Metaheuristic for Dynamic Optimisation (Map Labelling Case Study)."
+    },
+    "bsc": {
+      "title": "B.Sc. in Computer Science — Systems & Applications",
+      "meta": "University of Catania • Oct 2019 – Dec 2022 • 110/110 cum laude",
+      "body": "Thesis: Visual Sonar — Underwater acoustics simulator and sonar systems."
+    },
+    "highschool": {
+      "title": "Technical High School Diploma — IT",
+      "meta": "I.T.T. “Ettore Majorana” • Sep 2014 – Jul 2019 • 81/100"
+    }
+  },
+  "teaching": {
+    "label": "Teaching & Mentoring",
+    "assistantTitle": "Teaching Assistant",
+    "algorithms": {
+      "meta": "Algorithms & Laboratory • 2025, 2024",
+      "body": "Guided B.Sc. students across multiple cohorts; reinforced algorithmic thinking with hands-on labs."
+    },
+    "os": {
+      "meta": "Operating Systems • 2025",
+      "body": "Led system-level labs; built student confidence in process management and concurrency basics."
+    },
+    "applied": {
+      "meta": "Applied Informatics • 2024",
+      "body": "Delivered practical sessions for Biological Sciences students on applied computing."
+    },
+    "internship": {
+      "title": "Teacher Training Internship",
+      "meta": "Class A041 • Oct 2024 – Dec 2024",
+      "body": "180-hour classroom internship delivering lessons and seminars with high instructional standards."
+    },
+    "thesis": {
+      "title": "Thesis Co-supervision",
+      "meta": "2025",
+      "body": "Co-supervised B.Sc. thesis."
+    }
+  },
+  "work": {
+    "label": "Work Experience",
+    "researcher": {
+      "title": "Researcher",
+      "meta": "KOEXAI Srl • Oct 2024 – Present",
+      "body": "Research and applied projects in AI and metaheuristics; scholarship partner for my Ph.D."
+    },
+    "intern": {
+      "title": "Software Development Engineering Intern",
+      "meta": "STMicroelectronics • Feb 2023 – Dec 2023",
+      "body": "Built Power Automate Desktop PoCs, documented workflows, and collaborated with global engineering teams."
+    }
+  },
+  "publications": {
+    "label": "Publications",
+    "heading": "Peer-reviewed work and what's next.",
+    "astrai": {
+      "title": "ASTRAI: Advanced Supernova Transient Research with Artificial Intelligence",
+      "meta": "2025 - Submitted • KOEXAI collaboration."
+    },
+    "yolo": {
+      "title": "3D YOLO-like Detector for Cosmic Voids: A Multi-Scale Deep Learning Approach to Large-Scale Underdense Structures",
+      "meta": "2025 - Submitted • KOEXAI collaboration."
+    },
+    "halos": {
+      "title": "HALOS: Hierarchical Aggregation Learning for Overdensity Search",
+      "meta": "2025 - Submitted • KOEXAI collaboration."
+    },
+    "rag": {
+      "title": "Retrieval Augmented Generation with Iterative Critique: A Framework for Structured Task Solving",
+      "meta": "2025 - ISC 2025 — accepted for publication."
+    },
+    "weighted": {
+      "title": "A Weighted Binary String Benchmark to Assess the Efficiency of Stochastic Search Processes",
+      "meta": "2025 - ICSI 2025 — Presented in Yokohama, Best Student Paper • DOI: 10.1007/978-981-95-0982-9_10."
+    },
+    "tabu": {
+      "title": "A Real-Time Adaptive Tabu Search for Handling Zoom In/Out in Map Labeling Problem",
+      "meta": "2025 - LION18 • DOI: 10.1007/978-3-031-75623-8_9."
+    },
+    "more": {
+      "title": "More on the way",
+      "meta": "Additional manuscripts under revision."
+    }
+  },
+  "roles": {
+    "label": "Scientific Roles",
+    "community": "Community",
+    "isc2025": "Track Chair & Local Organising Committee",
+    "wbo2025": "Publicity Chair & Organising Committee",
+    "phdRep": {
+      "title": "PhD Student Representative",
+      "body": "Quality-Assurance Board, PhD Program in Computer Science, University of Catania"
+    },
+    "mess2024": "Local Organising Committee, Metaheuristics Summer School"
+  },
+  "projects": {
+    "label": "Selected projects",
+    "heading": "Some of the deployed Work:",
+    "github": "GitHub @AlessioMezzina",
+    "prevAria": "Previous project",
+    "nextAria": "Next project",
+    "wbo": {
+      "label": "Conference website",
+      "preview": "WBO 2025 preview"
+    },
+    "mess": {
+      "label": "Summer school site",
+      "preview": "MESS 2026 preview"
+    },
+    "dd": {
+      "alt": "D&D Manager logo",
+      "label": "Tooling",
+      "title": "D&D Campaign & Battle manager",
+      "body": "Narrative + combat tracking. Not live yet, contact me for a demo.",
+      "cta": "Request demo"
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Let's collaborate.",
+    "body": "I partner with companies, labs, and individuals to design AI projects and software systems.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "linkedinLabel": "LinkedIn",
+    "bookCall": "Book a call",
+    "backToTop": "Back to top"
+  },
+  "lab": {
+    "label": "Lab",
+    "heading": "Feel Bored? have a round of snake:",
+    "score": "Score",
+    "best": "Best",
+    "canvasLabel": "Snake game",
+    "startReset": "Start / Reset",
+    "pad": {
+      "up": "Up",
+      "left": "Left",
+      "right": "Right",
+      "down": "Down"
+    },
+    "gameOver": "Game Over - Start again"
+  },
+  "footer": {
+    "email": "Email",
+    "top": "Top"
+  },
+  "common": {
+    "link": "link"
+  },
+  "mailto": {
+    "general": {
+      "subject": "Project or call with Alessio Mezzina",
+      "body": "Hi Alessio,\n\nI'd like to discuss [topic/project] and book a call.\n\nMy availability: [times]\n\nThanks,\n[Your Name]"
+    },
+    "schedule": {
+      "subject": "Project or call with Alessio Mezzina",
+      "body": "Hi Alessio,\n\nI'd like to discuss [topic/project] and book a call.\n\nYou can reach me at: [phone / Zoom]\nPreferred times: [list a few]\n\nThanks,\n[Your Name]"
+    },
+    "demo": {
+      "subject": "D&D Manager Demo",
+      "body": "Hi Alessio,\n\nI'd like to see the D&D Campaign & Battle manager. Please share a demo.\n\nThanks,\n[Your Name]"
+    },
+    "bookCall": {
+      "subject": "Book a call with Alessio",
+      "body": "Hi Alessio,\n\nI'd like to book a call about [topic].\n\nHere are a few time slots that work for me: [times].\n\nThanks,\n[Your Name]"
+    }
+  }
+}
