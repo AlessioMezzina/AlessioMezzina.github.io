@@ -14,8 +14,8 @@
   },
   "hero": {
     "badge": "Generative AI / Metaheuristics / Optimization / Applied Research",
-    "subtitle": "Ph.D. candidate in AI & metaheuristics.",
-    "lede": "Ph.D. candidate at the University of Catania, supported by KOEXAI Srl. I design AI and optimization systems that translate research into reliable tools.",
+    "subtitle": "Ph.D. student in AI & metaheuristics.",
+    "lede": "Ph.D. student at the University of Catania, supported by KOEXAI Srl. I design AI and optimization systems that translate research into reliable tools.",
     "scheduleCall": "Schedule a call",
     "viewPublications": "View publications",
     "academicProfile": "Academic profile (DMI)",
@@ -125,7 +125,7 @@
     },
     "rag": {
       "title": "Retrieval Augmented Generation with Iterative Critique: A Framework for Structured Task Solving",
-      "meta": "2025 - ISC 2025 — accepted for publication."
+      "meta": "2025 - ISC 2025 — In press."
     },
     "weighted": {
       "title": "A Weighted Binary String Benchmark to Assess the Efficiency of Stochastic Search Processes",
@@ -143,13 +143,16 @@
   "roles": {
     "label": "Scientific Roles",
     "community": "Community",
+    "prevAria": "Previous year",
+    "nextAria": "Next year",
     "isc2025": "Track Chair & Local Organising Committee",
     "wbo2025": "Publicity Chair & Organising Committee",
     "phdRep": {
       "title": "PhD Student Representative",
       "body": "Quality-Assurance Board, PhD Program in Computer Science, University of Catania"
     },
-    "mess2024": "Local Organising Committee, Metaheuristics Summer School"
+    "mess2026": "Local Organising Committee",
+    "mess2024": "Local Organising Committee"
   },
   "projects": {
     "label": "Selected projects",
@@ -176,7 +179,7 @@
   "contact": {
     "label": "Contact",
     "heading": "Let's collaborate.",
-    "body": "I partner with companies, labs, and individuals to design AI projects and software systems.",
+    "body": "I partner with companies, labs, and individuals to design AI projects, software systems or website.",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "linkedinLabel": "LinkedIn",

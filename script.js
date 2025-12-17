@@ -203,10 +203,10 @@ function animateSections() {
   document.querySelectorAll("[data-animate]").forEach((el) => observer.observe(el));
 }
 
-function initCarousel() {
-  document.querySelectorAll(".project-carousel").forEach((carousel) => {
-    const track = carousel.querySelector(".project-track");
-    const cards = carousel.querySelectorAll(".project-card");
+function initCarousel(selector, trackSelector, cardSelector) {
+  document.querySelectorAll(selector).forEach((carousel) => {
+    const track = carousel.querySelector(trackSelector);
+    const cards = carousel.querySelectorAll(cardSelector);
     const prev = carousel.querySelector(".prev");
     const next = carousel.querySelector(".next");
     if (!track || !cards.length) return;
@@ -236,7 +236,8 @@ window.addEventListener("resize", () => {
 resize();
 createParticles();
 animateSections();
-initCarousel();
+initCarousel(".project-carousel", ".project-track", ".project-card");
+initCarousel(".roles-carousel", ".roles-track", ".role-card");
 if (!prefersReducedMotion) requestAnimationFrame(step);
 
 // Snake game

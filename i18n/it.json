@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Alessio Mezzina | Ricercatore AI & Data Scientist"
+    "title": "Alessio Mezzina | Ricercatore in AI e Data Scientist"
   },
   "nav": {
     "about": "Chi sono",
@@ -9,21 +9,21 @@
     "publications": "Pubblicazioni",
     "contact": "Contatti",
     "email": "Email",
-    "cta": "Parliamo",
-    "languageLabel": "Selettore lingua"
+    "cta": "Parliamone",
+    "languageLabel": "Selezione lingua"
   },
   "hero": {
     "badge": "AI generativa / Metaeuristiche / Ottimizzazione / Ricerca applicata",
     "subtitle": "Dottorando in AI e metaeuristiche.",
-    "lede": "Dottorando all'Università di Catania, con borsa KOEXAI Srl. Progetto sistemi di AI e ottimizzazione che trasformano la ricerca in strumenti affidabili.",
+    "lede": "Ciao! Sono un dottorando all'Università di Catania con borsa cofinanziata da KOEXAI Srl. la mia ricerca è focalizzata su AI  generativa e metaeuristiche applicate all'ottimizzazione.",
     "scheduleCall": "Prenota una call",
-    "viewPublications": "Vedi pubblicazioni",
+    "viewPublications": "Consulta pubblicazioni",
     "academicProfile": "Profilo accademico (DMI)",
     "currentRoleLabel": "Ruolo attuale",
     "currentRoleTitle": "Dottorato in Informatica",
-    "currentRoleMeta": "Università di Catania • Ott 2024 – Presente",
-    "currentRoleLine1": "Borsa di dottorato con KOEXAI Srl.",
-    "currentRoleLine2": "Ricerca in AI generativa e ottimizzazione metaeuristica.",
+    "currentRoleMeta": "Università di Catania • Ott 2024 – oggi",
+    "currentRoleLine1": "Borsa di dottorato finanziata da KOEXAI Srl.",
+    "currentRoleLine2": "Ricerca su AI generativa e ottimizzazione metaeuristica.",
     "chip1": "AI generativa",
     "chip2": "Metaeuristiche",
     "chip3": "Ottimizzazione",
@@ -32,32 +32,32 @@
   },
   "about": {
     "label": "Chi sono",
-    "body": "Sono un ricercatore e builder focalizzato nel trasformare metodi di AI e metaeuristiche in sistemi utilizzabili. Mi piace seguire studenti, collaborare con l'industria e presentare risultati alle conferenze. Fuori dal laboratorio ricarico con trekking e giochi da tavolo.",
+    "body": "Dottorando (Unict & KOEXAI Srl). Sviluppo AI e sistemi di ottimizzazione che concretizzano la ricerca in strumenti operativi.",
     "chip1": "AI generativa",
     "chip2": "Metaeuristiche",
     "chip3": "Ottimizzazione",
     "chip4": "Data Science",
     "chip5": "Ricerca applicata",
-    "chip6": "Risoluzione problemi",
-    "chip7": "Didattica & Mentoring",
-    "chip8": "Organizzazione conferenze"
+    "chip6": "Risoluzione dei problemi",
+    "chip7": "Didattica e mentoring",
+    "chip8": "Organizzazione di conferenze"
   },
   "education": {
     "label": "Formazione",
-    "heading": "Percorso accademico fondato su AI e ottimizzazione.",
+    "heading": "Percorso accademico incentrato su AI e ottimizzazione.",
     "phd": {
       "title": "Dottorato in Informatica",
-      "meta": "Università di Catania • Ott 2024 – Presente",
+      "meta": "Università di Catania • Ott 2024 – oggi",
       "body": "Ricerca in AI e metaeuristiche con borsa KOEXAI."
     },
     "abilitation": {
-      "title": "Abilitazione all'insegnamento Classe A041",
+      "title": "Abilitazione all'insegnamento (Classe A041)",
       "meta": "Università di Catania • Giu 2024 – Dic 2024 • 10/10"
     },
     "msc": {
       "title": "Laurea magistrale in Informatica — Data Science",
       "meta": "Università di Catania • Ott 2022 – Lug 2024 • 110/110 con lode",
-      "body": "Tesi: Metaeuristica adattiva in tempo reale per l'ottimizzazione dinamica (caso di studio: map labelling)."
+      "body": "Tesi: Metaeuristica adattiva in tempo reale per l'ottimizzazione dinamica (caso di studio: etichettatura di mappe)."
     },
     "bsc": {
       "title": "Laurea triennale in Informatica — Sistemi e Applicazioni",
@@ -71,65 +71,65 @@
   },
   "teaching": {
     "label": "Didattica e mentoring",
-    "assistantTitle": "Assistente alla didattica",
+    "assistantTitle": "Teaching Assistant",
     "algorithms": {
       "meta": "Algoritmi & Laboratorio • 2025, 2024",
-      "body": "Seguito studenti della triennale in più coorti; rafforzato il pensiero algoritmico con laboratori pratici."
+      "body": "Ho seguito studenti della triennale di più coorti, rafforzando il pensiero algoritmico con laboratori pratici."
     },
     "os": {
       "meta": "Sistemi Operativi • 2025",
-      "body": "Condotto laboratori di sistema; consolidato le basi su processi e concorrenza."
+      "body": "Ho condotto laboratori di sistemi operativi, consolidando le basi su processi e concorrenza."
     },
     "applied": {
       "meta": "Informatica Applicata • 2024",
-      "body": "Lezioni pratiche per studenti di Scienze Biologiche su informatica applicata."
+      "body": "Lezioni pratiche di informatica applicata per studenti di Scienze Biologiche."
     },
     "internship": {
-      "title": "Tirocinio formativo per la docenza",
+      "title": "Tirocinio formativo alla docenza",
       "meta": "Classe A041 • Ott 2024 – Dic 2024",
       "body": "Tirocinio di 180 ore con lezioni e seminari ad alto standard didattico."
     },
     "thesis": {
-      "title": "Co-supervisione tesi",
+      "title": "Co-supervisione di tesi",
       "meta": "2025",
-      "body": "Co-supervisione di una tesi triennale."
+      "body": "Co-supervisione di tesi triennale."
     }
   },
   "work": {
-    "label": "Esperienza lavorativa",
+    "label": "Esperienza professionale",
     "researcher": {
       "title": "Ricercatore",
-      "meta": "KOEXAI Srl • Ott 2024 – Presente",
-      "body": "Ricerca e progetti applicati in AI e metaeuristiche; partner di borsa per il dottorato."
+      "meta": "KOEXAI Srl • Ott 2024 – oggi",
+      "body": "Ricerca e progetti applicati in AI e metaeuristiche; partner industriale della borsa di dottorato."
     },
     "intern": {
-      "title": "Tirocinante in Software Development Engineering",
+      "title": "Tirocinante - Software Development Engineering",
       "meta": "STMicroelectronics • Feb 2023 – Dic 2023",
-      "body": "Sviluppo di PoC in Power Automate Desktop, documentazione dei workflow e collaborazione con team globali."
+      "body": "Realizzazione di PoC in Power Automate Desktop, documentazione dei workflow e collaborazione con team globali."
     }
   },
   "publications": {
     "label": "Pubblicazioni",
-    "heading": "Lavori peer-reviewed e prossimi passi.",
+    "heading": "Lavori peer-reviewed e prossimi sviluppi.",
     "astrai": {
       "title": "ASTRAI: Advanced Supernova Transient Research with Artificial Intelligence",
-      "meta": "2025 - Sottomesso • collaborazione KOEXAI."
+      "meta": "2025 - Sottomesso • in collaborazione con KOEXAI."
     },
     "yolo": {
       "title": "3D YOLO-like Detector for Cosmic Voids: A Multi-Scale Deep Learning Approach to Large-Scale Underdense Structures",
-      "meta": "2025 - Sottomesso • collaborazione KOEXAI."
+      "meta": "2025 - Sottomesso • in collaborazione con KOEXAI."
     },
     "halos": {
       "title": "HALOS: Hierarchical Aggregation Learning for Overdensity Search",
-      "meta": "2025 - Sottomesso • collaborazione KOEXAI."
+      "meta": "2025 - Sottomesso • in collaborazione con KOEXAI."
     },
     "rag": {
       "title": "Retrieval Augmented Generation with Iterative Critique: A Framework for Structured Task Solving",
-      "meta": "2025 - ISC 2025 — accettato per la pubblicazione."
+      "meta": "2025 - ISC 2025 — In press."
     },
     "weighted": {
       "title": "A Weighted Binary String Benchmark to Assess the Efficiency of Stochastic Search Processes",
-      "meta": "2025 - ICSI 2025 — Presentato a Yokohama, Best Student Paper • DOI: 10.1007/978-981-95-0982-9_10."
+      "meta": "2025 - ICSI 2025 — presentato a Yokohama, premio Best Student Paper • DOI: 10.1007/978-981-95-0982-9_10."
     },
     "tabu": {
       "title": "A Real-Time Adaptive Tabu Search for Handling Zoom In/Out in Map Labeling Problem",
@@ -142,41 +142,44 @@
   },
   "roles": {
     "label": "Ruoli scientifici",
-    "community": "Community",
+    "community": "Comunità",
+    "prevAria": "Anno precedente",
+    "nextAria": "Anno successivo",
     "isc2025": "Track Chair e Comitato Organizzativo Locale",
     "wbo2025": "Publicity Chair e Comitato Organizzativo",
     "phdRep": {
-      "title": "Rappresentante dottorandi",
-      "body": "Quality-Assurance Board, Dottorato in Informatica, Università di Catania"
+      "title": "Rappresentante dei dottorandi",
+      "body": "Commissione Qualità del Dottorato in Informatica, Università di Catania"
     },
-    "mess2024": "Comitato Organizzativo Locale, Metaheuristics Summer School"
+    "mess2026": "Comitato Organizzativo Locale",
+    "mess2024": "Comitato Organizzativo Locale"
   },
   "projects": {
     "label": "Progetti selezionati",
-    "heading": "Alcuni lavori rilasciati:",
+    "heading": "Alcuni progetti:",
     "github": "GitHub @AlessioMezzina",
     "prevAria": "Progetto precedente",
     "nextAria": "Progetto successivo",
     "wbo": {
-      "label": "Sito conferenza",
+      "label": "Sito della conferenza",
       "preview": "Anteprima WBO 2025"
     },
     "mess": {
-      "label": "Sito summer school",
+      "label": "Sito della summer school",
       "preview": "Anteprima MESS 2026"
     },
     "dd": {
       "alt": "Logo D&D Manager",
       "label": "Strumento",
-      "title": "Gestore campagna e battaglie D&D",
-      "body": "Tracciamento narrativa e combattimento. Non ancora online, contattami per una demo.",
+      "title": "Gestore di campagna e battaglie D&D",
+      "body": "Gestione di narrativa e combattimenti. Non ancora online; contattami per una demo.",
       "cta": "Richiedi demo"
     }
   },
   "contact": {
     "label": "Contatti",
-    "heading": "Collaboriamo.",
-    "body": "Collaboro con aziende, laboratori e persone per progettare progetti AI e sistemi software.",
+    "heading": "Contattami!.",
+    "body": "Collaboro con aziende, laboratori, professionisti per sviluppare progetti di AI, sistemi software general purpose, o siti web.",
     "emailLabel": "Email",
     "phoneLabel": "Telefono",
     "linkedinLabel": "LinkedIn",
@@ -185,7 +188,7 @@
   },
   "lab": {
     "label": "Lab",
-    "heading": "Ti annoi? Fai una partita a Snake:",
+    "heading": "Un momento di pausa? Fai una partita a Snake:",
     "score": "Punteggio",
     "best": "Record",
     "canvasLabel": "Gioco Snake",
@@ -196,30 +199,30 @@
       "right": "Destra",
       "down": "Giù"
     },
-    "gameOver": "Game Over - Ricomincia"
+    "gameOver": "Game Over - Riprova"
   },
   "footer": {
     "email": "Email",
-    "top": "Inizio"
+    "top": "Torna su"
   },
   "common": {
     "link": "link"
   },
   "mailto": {
     "general": {
-      "subject": "Progetto o call con Alessio Mezzina",
-      "body": "Ciao Alessio,\n\nVorrei discutere di [tema/progetto] e prenotare una call.\n\nLe mie disponibilità: [orari]\n\nGrazie,\n[Il tuo nome]"
+      "subject": "Proposta di progetto o call con Alessio Mezzina",
+      "body": "Ciao Alessio,\n\nVorrei parlare di [tema/progetto] e fissare una call.\n\nLe mie disponibilità: [orari]\n\nGrazie,\n[Il tuo nome]"
     },
     "schedule": {
-      "subject": "Progetto o call con Alessio Mezzina",
-      "body": "Ciao Alessio,\n\nVorrei discutere di [tema/progetto] e prenotare una call.\n\nPuoi contattarmi a: [telefono / Zoom]\nOrari preferiti: [elenca alcuni]\n\nGrazie,\n[Il tuo nome]"
+      "subject": "Proposta di progetto o call con Alessio Mezzina",
+      "body": "Ciao Alessio,\n\nVorrei discutere di [tema/progetto] e fissare una call.\n\nPuoi contattarmi a: [telefono / Zoom]\nOrari preferiti: [elenca alcuni]\n\nGrazie,\n[Il tuo nome]"
     },
     "demo": {
-      "subject": "Demo D&D Manager",
-      "body": "Ciao Alessio,\n\nVorrei vedere il gestore campagne e battaglie D&D. Puoi condividere una demo?\n\nGrazie,\n[Il tuo nome]"
+      "subject": "Richiesta demo D&D Manager",
+      "body": "Ciao Alessio,\n\nVorrei vedere il gestore di campagne e battaglie D&D. Puoi condividere una demo?\n\nGrazie,\n[Il tuo nome]"
     },
     "bookCall": {
-      "subject": "Prenota una call con Alessio",
+      "subject": "Prenotazione call con Alessio",
       "body": "Ciao Alessio,\n\nVorrei prenotare una call su [tema].\n\nEcco alcune fasce orarie che per me vanno bene: [orari].\n\nGrazie,\n[Il tuo nome]"
     }
   }
