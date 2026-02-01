@@ -10,7 +10,8 @@
     "contact": "Contact",
     "email": "Email",
     "cta": "Let's Talk",
-    "languageLabel": "Language selector"
+    "languageLabel": "Language selector",
+    "themeToggle": "Toggle dark mode"
   },
   "hero": {
     "badge": "Generative AI / Metaheuristics / Optimization / Applied Research",

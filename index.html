@@ -4,37 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alessio Mezzina | AI Researcher &amp; Data Scientist</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ph.D. candidate in AI & metaheuristics at the University of Catania. Specializing in generative AI, optimization algorithms, and applied research.">
+  <meta name="keywords" content="Alessio Mezzina, AI Researcher, Data Scientist, PhD, Metaheuristics, Optimization, Machine Learning, Catania">
+  <meta name="author" content="Alessio Mezzina">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alessio Mezzina | AI Researcher & Data Scientist">
+  <meta property="og:description" content="Ph.D. candidate designing AI and optimization systems that translate research into reliable tools.">
+  <meta property="og:url" content="https://alessiomezzina.github.io">
+  <meta property="og:image" content="https://alessiomezzina.github.io/220.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alessio Mezzina | AI Researcher">
+  <meta name="twitter:description" content="Ph.D. candidate in AI & metaheuristics at the University of Catania.">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#1f3a57" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1419" media="(prefers-color-scheme: dark)">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="220.jpg" as="image">
 </head>
 <body>
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__content">
+      <div class="preloader__logo">AM</div>
+      <div class="preloader__bar">
+        <div class="preloader__fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+  
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- Background Canvas -->
   <canvas id="bg-canvas" aria-hidden="true"></canvas>
   <div class="grain" aria-hidden="true"></div>
 
-  <header class="nav">
-    <div class="nav__logo">AM</div>
-    <nav>
+  <!-- Navigation -->
+  <header class="nav" role="banner">
+    <a href="#top" class="nav__logo" aria-label="Alessio Mezzina - Go to top">AM</a>
+    
+    <button class="nav__toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav role="navigation" aria-label="Main navigation">
       <a href="#about" data-i18n="nav.about">About</a>
       <a href="#projects" data-i18n="nav.projects">Projects</a>
       <a href="#experience" data-i18n="nav.experience">Experience</a>
       <a href="#publications" data-i18n="nav.publications">Publications</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
+    
     <div class="nav__cta">
-      <a class="button ghost" href="mailto:Alessio.mezzina@phd.unict.it?subject=Project%20or%20call%20with%20Alessio%20Mezzina&body=Hi%20Alessio%2C%0D%0A%0D%0AI%27d%20like%20to%20discuss%20%5Btopic%2Fproject%5D%20and%20book%20a%20call.%0D%0A%0D%0AMy%20availability%3A%20%5Btimes%5D%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20Name%5D" data-i18n="nav.email" data-mailto="general" data-mailto-address="Alessio.mezzina@phd.unict.it">Email</a>
-      <a class="button ghost" href="#contact" data-i18n="nav.cta">Let's Talk</a>
-      <div class="lang-switch" aria-label="Language selector" data-i18n-attr="aria-label" data-i18n-attr-key="nav.languageLabel">
+      <a class="button ghost" href="mailto:Alessio.mezzina@phd.unict.it" data-i18n="nav.email" data-mailto="general" data-mailto-address="Alessio.mezzina@phd.unict.it">Email</a>
+      
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-i18n-attr="aria-label" data-i18n-attr-key="nav.themeToggle">
+        <div class="theme-toggle__track">
+          <span class="theme-toggle__icon">☀️</span>
+          <span class="theme-toggle__icon">🌙</span>
+        </div>
+        <div class="theme-toggle__thumb"></div>
+      </button>
+      
+      <!-- Language Switch -->
+      <div class="lang-switch" role="group" aria-label="Language selector" data-i18n-attr="aria-label" data-i18n-attr-key="nav.languageLabel">
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
         <button type="button" data-lang="it" aria-pressed="false">IT</button>
       </div>
     </div>
   </header>
 
-  <main class="page">
-    <section class="hero" id="top">
+  <!-- Main Content -->
+  <main class="page" id="top">
+    <!-- Hero Section -->
+    <section class="hero" aria-label="Introduction">
       <div class="hero__badge" data-i18n="hero.badge">Generative AI / Metaheuristics / Optimization / Applied Research</div>
+      
       <div class="hero__grid">
         <div class="hero__copy">
           <h1>
@@ -45,13 +119,14 @@
             Ph.D. candidate at the University of Catania, supported by KOEXAI Srl. I design AI and optimization systems that translate research into reliable tools.
           </p>
           <div class="hero__actions">
-            <a class="button" href="mailto:Alessio.mezzina@phd.unict.it?subject=Project%20or%20call%20with%20Alessio%20Mezzina&body=Hi%20Alessio%2C%0D%0A%0D%0AI%27d%20like%20to%20discuss%20%5Btopic%2Fproject%5D%20and%20book%20a%20call.%0D%0A%0D%0AYou%20can%20reach%20me%20at%3A%20%5Bphone%20%2F%20Zoom%5D%0D%0APreferred%20times%3A%20%5Blist%20a%20few%5D%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20Name%5D" data-i18n="hero.scheduleCall" data-mailto="schedule" data-mailto-address="Alessio.mezzina@phd.unict.it">Schedule a call</a>
+            <a class="button" href="mailto:Alessio.mezzina@phd.unict.it" data-i18n="hero.scheduleCall" data-mailto="schedule" data-mailto-address="Alessio.mezzina@phd.unict.it">Schedule a call</a>
             <a class="button ghost" href="#publications" data-i18n="hero.viewPublications">View publications</a>
-            <a class="pill link-pill" href="https://web.dmi.unict.it/dottorandi/alessio.mezzina" target="_blank" rel="noreferrer" data-i18n="hero.academicProfile">Academic profile (DMI)</a>
+            <a class="pill link-pill" href="https://web.dmi.unict.it/dottorandi/alessio.mezzina" target="_blank" rel="noopener noreferrer" data-i18n="hero.academicProfile">Academic profile (DMI)</a>
           </div>
         </div>
+        
         <div class="hero__card" data-animate>
-          <div class="orbit">
+          <div class="orbit" aria-hidden="true">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -59,7 +134,7 @@
           <div class="hero__card-body">
             <div class="hero__top">
               <div class="hero__avatar">
-                <img src="220.jpg" alt="Portrait of Alessio Mezzina" data-i18n-attr="alt" data-i18n-attr-key="hero.avatarAlt">
+                <img src="220.jpg" alt="Portrait of Alessio Mezzina" width="100" height="100" data-i18n-attr="alt" data-i18n-attr-key="hero.avatarAlt">
               </div>
               <div>
                 <p class="label" data-i18n="hero.currentRoleLabel">Current role</p>
@@ -82,95 +157,109 @@
       </div>
     </section>
 
-    <section class="panel" id="about" data-animate>
+    <!-- About Section -->
+    <section class="panel" id="about" data-animate aria-labelledby="about-heading">
       <div class="panel__head">
         <p class="label" data-i18n="about.label">About</p>
+        <h2 id="about-heading" class="visually-hidden">About Me</h2>
       </div>
       <p class="muted wide" data-i18n="about.body">
         I am a researcher and builder focused on turning AI and metaheuristic methods into usable systems. I enjoy mentoring students, collaborating with industry, and presenting results at conferences. Outside the lab, I recharge with hiking and tabletop games.
       </p>
-      <div class="badges">
-        <span class="chip" data-i18n="about.chip1">Generative AI</span>
-        <span class="chip" data-i18n="about.chip2">Metaheuristics</span>
-        <span class="chip" data-i18n="about.chip3">Optimization</span>
-        <span class="chip" data-i18n="about.chip4">Data Science</span>
-        <span class="chip" data-i18n="about.chip5">Applied Research</span>
-        <span class="chip" data-i18n="about.chip6">Problem Solving</span>
-        <span class="chip" data-i18n="about.chip7">Teaching &amp; Mentoring</span>
-        <span class="chip" data-i18n="about.chip8">Conference Organization</span>
+      <div class="badges" role="list" aria-label="Skills and expertise">
+        <span class="chip" role="listitem" data-i18n="about.chip1">Generative AI</span>
+        <span class="chip" role="listitem" data-i18n="about.chip2">Metaheuristics</span>
+        <span class="chip" role="listitem" data-i18n="about.chip3">Optimization</span>
+        <span class="chip" role="listitem" data-i18n="about.chip4">Data Science</span>
+        <span class="chip" role="listitem" data-i18n="about.chip5">Applied Research</span>
+        <span class="chip" role="listitem" data-i18n="about.chip6">Problem Solving</span>
+        <span class="chip" role="listitem" data-i18n="about.chip7">Teaching &amp; Mentoring</span>
+        <span class="chip" role="listitem" data-i18n="about.chip8">Conference Organization</span>
       </div>
     </section>
 
-    <section class="panel" id="experience" data-animate>
+    <!-- Experience Section -->
+    <section class="panel" id="experience" data-animate aria-labelledby="education-heading">
       <div class="panel__head">
         <p class="label" data-i18n="education.label">Education</p>
-        <h2 data-i18n="education.heading">Academic path grounded in AI and optimization.</h2>
+        <h2 id="education-heading" data-i18n="education.heading">Academic path grounded in AI and optimization.</h2>
       </div>
-      <div class="timeline">
-        <div class="timeline__item">
-          <div class="dot"></div>
+      
+      <div class="timeline" role="list">
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="education.phd.title">Ph.D. in Computer Science</h3>
             <p class="muted" data-i18n="education.phd.meta">University of Catania • Oct 2024 – Present</p>
             <p data-i18n="education.phd.body">AI and metaheuristics research with KOEXAI scholarship.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="education.abilitation.title">Teaching Abilitation Class A041</h3>
             <p class="muted" data-i18n="education.abilitation.meta">University of Catania • Jun 2024 – Dec 2024 • 10/10</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="education.msc.title">M.Sc. in Computer Science — Data Science</h3>
             <p class="muted" data-i18n="education.msc.meta">University of Catania • Oct 2022 – Jul 2024 • 110/110 cum laude</p>
             <p data-i18n="education.msc.body">Thesis: Real Time Adaptive Metaheuristic for Dynamic Optimisation (Map Labelling Case Study).</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="education.bsc.title">B.Sc. in Computer Science — Systems &amp; Applications</h3>
             <p class="muted" data-i18n="education.bsc.meta">University of Catania • Oct 2019 – Dec 2022 • 110/110 cum laude</p>
             <p data-i18n="education.bsc.body">Thesis: Visual Sonar — Underwater acoustics simulator and sonar systems.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="education.highschool.title">Technical High School Diploma — IT</h3>
-            <p class="muted" data-i18n="education.highschool.meta">I.T.T. “Ettore Majorana” • Sep 2014 – Jul 2019 • 81/100</p>
+            <p class="muted" data-i18n="education.highschool.meta">I.T.T. "Ettore Majorana" • Sep 2014 – Jul 2019 • 81/100</p>
           </div>
-        </div>
+        </article>
       </div>
 
+      <!-- Teaching Section -->
       <div class="panel__head spaced">
         <p class="label" data-i18n="teaching.label">Teaching & Mentoring</p>
       </div>
+      
       <div class="cards">
         <article class="card">
           <h3 data-i18n="teaching.assistantTitle">Teaching Assistant</h3>
           <p class="muted" data-i18n="teaching.algorithms.meta">Algorithms & Laboratory • 2025, 2024</p>
           <p data-i18n="teaching.algorithms.body">Guided B.Sc. students across multiple cohorts; reinforced algorithmic thinking with hands-on labs.</p>
         </article>
+        
         <article class="card">
           <h3 data-i18n="teaching.assistantTitle">Teaching Assistant</h3>
           <p class="muted" data-i18n="teaching.os.meta">Operating Systems • 2025</p>
           <p data-i18n="teaching.os.body">Led system-level labs; built student confidence in process management and concurrency basics.</p>
         </article>
+        
         <article class="card">
           <h3 data-i18n="teaching.assistantTitle">Teaching Assistant</h3>
           <p class="muted" data-i18n="teaching.applied.meta">Applied Informatics • 2024</p>
           <p data-i18n="teaching.applied.body">Delivered practical sessions for Biological Sciences students on applied computing.</p>
         </article>
+        
         <article class="card">
           <h3 data-i18n="teaching.internship.title">Teacher Training Internship</h3>
           <p class="muted" data-i18n="teaching.internship.meta">Class A041 • Oct 2024 – Dec 2024</p>
           <p data-i18n="teaching.internship.body">180-hour classroom internship delivering lessons and seminars with high instructional standards.</p>
         </article>
+        
         <article class="card">
           <h3 data-i18n="teaching.thesis.title">Thesis Co-supervision</h3>
           <p class="muted" data-i18n="teaching.thesis.meta">2025</p>
@@ -178,110 +267,126 @@
         </article>
       </div>
 
+      <!-- Work Experience -->
       <div class="panel__head spaced">
         <p class="label" data-i18n="work.label">Work Experience</p>
       </div>
-      <div class="timeline">
-        <div class="timeline__item">
-          <div class="dot"></div>
+      
+      <div class="timeline" role="list">
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="work.researcher.title">Researcher</h3>
             <p class="muted" data-i18n="work.researcher.meta">KOEXAI Srl • Oct 2024 – Present</p>
             <p data-i18n="work.researcher.body">Research and applied projects in AI and metaheuristics; scholarship partner for my Ph.D.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="work.intern.title">Software Development Engineering Intern</h3>
             <p class="muted" data-i18n="work.intern.meta">STMicroelectronics • Feb 2023 – Dec 2023</p>
             <p data-i18n="work.intern.body">Built Power Automate Desktop PoCs, documented workflows, and collaborated with global engineering teams.</p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section class="panel" id="publications" data-animate>
+    <!-- Publications Section -->
+    <section class="panel" id="publications" data-animate aria-labelledby="publications-heading">
       <div class="panel__head">
         <p class="label" data-i18n="publications.label">Publications</p>
-        <h2 data-i18n="publications.heading">Peer-reviewed work and what's next.</h2>
+        <h2 id="publications-heading" data-i18n="publications.heading">Peer-reviewed work and what's next.</h2>
       </div>
-      <div class="timeline">
-        <div class="timeline__item">
-          <div class="dot"></div>
+      
+      <div class="timeline" role="list">
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="publications.astrai.title">ASTRAI: Advanced Supernova Transient Research with Artificial Intelligence</h3>
             <p class="muted" data-i18n="publications.astrai.meta">2025 - Submitted • KOEXAI collaboration.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="publications.yolo.title">3D YOLO-like Detector for Cosmic Voids: A Multi-Scale Deep Learning Approach to Large-Scale Underdense Structures</h3>
             <p class="muted" data-i18n="publications.yolo.meta">2025 - Submitted • KOEXAI collaboration.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="publications.halos.title">HALOS: Hierarchical Aggregation Learning for Overdensity Search</h3>
             <p class="muted" data-i18n="publications.halos.meta">2025 - Submitted • KOEXAI collaboration.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="publications.rag.title">Retrieval Augmented Generation with Iterative Critique: A Framework for Structured Task Solving</h3>
             <p class="muted" data-i18n="publications.rag.meta">2025 - ISC 2025 — accepted for publication.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="publications.weighted.title">A Weighted Binary String Benchmark to Assess the Efficiency of Stochastic Search Processes</h3>
             <p class="muted" data-i18n="publications.weighted.meta">2025 - ICSI 2025 — Presented in Yokohama, Best Student Paper • DOI: 10.1007/978-981-95-0982-9_10.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="publications.tabu.title">A Real-Time Adaptive Tabu Search for Handling Zoom In/Out in Map Labeling Problem</h3>
             <p class="muted" data-i18n="publications.tabu.meta">2025 - LION18 • DOI: 10.1007/978-3-031-75623-8_9.</p>
           </div>
-        </div>
-        <div class="timeline__item">
-          <div class="dot"></div>
+        </article>
+        
+        <article class="timeline__item" role="listitem">
+          <div class="dot" aria-hidden="true"></div>
           <div>
             <h3 data-i18n="publications.more.title">More on the way</h3>
             <p class="muted" data-i18n="publications.more.meta">Additional manuscripts under revision.</p>
           </div>
-        </div>
+        </article>
       </div>
+      
+      <!-- Scientific Roles -->
       <div class="panel__head spaced">
         <p class="label" data-i18n="roles.label">Scientific Roles</p>
         <h3 data-i18n="roles.community">Community</h3>
       </div>
-      <div class="roles-carousel">
+      
+      <div class="roles-carousel" aria-label="Scientific roles by year">
         <button class="project-btn prev" type="button" aria-label="Previous year" data-i18n-attr="aria-label" data-i18n-attr-key="roles.prevAria">←</button>
         <div class="roles-track">
           <article class="card role-card">
             <h3>2026</h3>
             <ul class="stack">
-              <li><strong>MESS2026</strong> — <span data-i18n="roles.mess2026">Local Organising Committee, Metaheuristics Summer School</span> (<a class="link" href="https://www.ants-lab.it/mess2026/#" target="_blank" rel="noreferrer" data-i18n="common.link">link</a>).</li>
+              <li><strong>MESS2026</strong> — <span data-i18n="roles.mess2026">Local Organising Committee, Metaheuristics Summer School</span> (<a class="link" href="https://www.ants-lab.it/mess2026/#" target="_blank" rel="noopener noreferrer" data-i18n="common.link">link</a>).</li>
             </ul>
           </article>
+          
           <article class="card role-card">
             <h3>2025</h3>
             <ul class="stack">
-              <li><strong>ISC 2025</strong> — <span data-i18n="roles.isc2025">Track Chair &amp; Local Organising Committee</span> (<a class="link" href="https://decisionsciencealliance.org/isc-2025/" target="_blank" rel="noreferrer" data-i18n="common.link">link</a>).</li>
-              <li><strong>WBO 2025</strong> — <span data-i18n="roles.wbo2025">Publicity Chair &amp; Organising Committee</span> (<a class="link" href="https://www.ants-lab.it/wbo2025/" target="_blank" rel="noreferrer" data-i18n="common.link">link</a>).</li>
+              <li><strong>ISC 2025</strong> — <span data-i18n="roles.isc2025">Track Chair & Local Organising Committee</span> (<a class="link" href="https://decisionsciencealliance.org/isc-2025/" target="_blank" rel="noopener noreferrer" data-i18n="common.link">link</a>).</li>
+              <li><strong>WBO 2025</strong> — <span data-i18n="roles.wbo2025">Publicity Chair & Organising Committee</span> (<a class="link" href="https://www.ants-lab.it/wbo2025/" target="_blank" rel="noopener noreferrer" data-i18n="common.link">link</a>).</li>
               <li><strong data-i18n="roles.phdRep.title">PhD Student Representative</strong> — <span data-i18n="roles.phdRep.body">Quality-Assurance Board, PhD Program in Computer Science, University of Catania</span>.</li>
             </ul>
           </article>
+          
           <article class="card role-card">
             <h3>2024</h3>
             <ul class="stack">
-              <li><strong>MESS2024</strong> — <span data-i18n="roles.mess2024">Local Organising Committee, Metaheuristics Summer School</span> (<a class="link" href="https://www.ants-lab.it/mess2024/" target="_blank" rel="noreferrer" data-i18n="common.link">link</a>).</li>
+              <li><strong>MESS2024</strong> — <span data-i18n="roles.mess2024">Local Organising Committee, Metaheuristics Summer School</span> (<a class="link" href="https://www.ants-lab.it/mess2024/" target="_blank" rel="noopener noreferrer" data-i18n="common.link">link</a>).</li>
             </ul>
           </article>
         </div>
@@ -289,46 +394,56 @@
       </div>
     </section>
 
-    <section class="panel" id="projects" data-animate>
+    <!-- Projects Section -->
+    <section class="panel" id="projects" data-animate aria-labelledby="projects-heading">
       <div class="panel__head">
         <p class="label" data-i18n="projects.label">Selected projects</p>
-        <h2 data-i18n="projects.heading">Some of the deployed Work:</h2>
+        <h2 id="projects-heading" data-i18n="projects.heading">Some of the deployed Work:</h2>
       </div>
+      
       <div class="project-meta">
-        <a class="pill link-pill" href="https://github.com/AlessioMezzina" target="_blank" rel="noreferrer" data-i18n="projects.github">GitHub @AlessioMezzina</a>
+        <a class="pill link-pill" href="https://github.com/AlessioMezzina" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub @AlessioMezzina
+        </a>
       </div>
-      <div class="project-carousel">
+      
+      <div class="project-carousel" aria-label="Featured projects">
         <button class="project-btn prev" type="button" aria-label="Previous project" data-i18n-attr="aria-label" data-i18n-attr-key="projects.prevAria">←</button>
         <div class="project-track">
-          <a class="project-card" href="https://www.ants-lab.it/wbo2025/index.html" target="_blank" rel="noreferrer">
+          <a class="project-card" href="https://www.ants-lab.it/wbo2025/index.html" target="_blank" rel="noopener noreferrer">
             <div class="project-thumb">
               <div class="project-fallback"></div>
-              <iframe src="https://www.ants-lab.it/wbo2025/index.html" loading="lazy" title="WBO 2025 preview" data-i18n-attr="title" data-i18n-attr-key="projects.wbo.preview"></iframe>
+              <iframe src="https://www.ants-lab.it/wbo2025/index.html" loading="lazy" title="WBO 2025 preview" data-i18n-attr="title" data-i18n-attr-key="projects.wbo.preview" tabindex="-1"></iframe>
             </div>
             <div class="project-body">
               <p class="label" data-i18n="projects.wbo.label">Conference website</p>
               <h3>WBO 2025</h3>
             </div>
           </a>
-          <a class="project-card" href="https://www.ants-lab.it/mess2026/index.html" target="_blank" rel="noreferrer">
+          
+          <a class="project-card" href="https://www.ants-lab.it/mess2026/index.html" target="_blank" rel="noopener noreferrer">
             <div class="project-thumb">
               <div class="project-fallback"></div>
-              <iframe src="https://www.ants-lab.it/mess2026/index.html" loading="lazy" title="MESS 2026 preview" data-i18n-attr="title" data-i18n-attr-key="projects.mess.preview"></iframe>
+              <iframe src="https://www.ants-lab.it/mess2026/index.html" loading="lazy" title="MESS 2026 preview" data-i18n-attr="title" data-i18n-attr-key="projects.mess.preview" tabindex="-1"></iframe>
             </div>
             <div class="project-body">
               <p class="label" data-i18n="projects.mess.label">Summer school site</p>
               <h3>MESS 2026</h3>
             </div>
           </a>
+          
           <div class="project-card static">
             <div class="project-thumb">
-              <img src="logo.png" alt="D&amp;D Manager logo" class="project-thumb-img" data-i18n-attr="alt" data-i18n-attr-key="projects.dd.alt">
+              <img src="logo.png" alt="D&amp;D Manager logo" class="project-thumb-img" data-i18n-attr="alt" data-i18n-attr-key="projects.dd.alt" loading="lazy">
             </div>
             <div class="project-body">
               <p class="label" data-i18n="projects.dd.label">Tooling</p>
               <h3 data-i18n="projects.dd.title">D&amp;D Campaign &amp; Battle manager</h3>
               <p class="muted" data-i18n="projects.dd.body">Narrative + combat tracking. Not live yet, contact me for a demo.</p>
-              <a class="button ghost small-btn" href="mailto:Alessio.mezzina@phd.unict.it?subject=D%26D%20Manager%20Demo&body=Hi%20Alessio%2C%0D%0A%0D%0AI%27d%20like%20to%20see%20the%20D%26D%20Campaign%20%26%20Battle%20manager.%20Please%20share%20a%20demo.%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20Name%5D" data-i18n="projects.dd.cta" data-mailto="demo" data-mailto-address="Alessio.mezzina@phd.unict.it">Request demo</a>
+              <a class="button ghost small-btn" href="mailto:Alessio.mezzina@phd.unict.it" data-i18n="projects.dd.cta" data-mailto="demo" data-mailto-address="Alessio.mezzina@phd.unict.it">Request demo</a>
             </div>
           </div>
         </div>
@@ -336,16 +451,18 @@
       </div>
     </section>
 
-    <section class="panel contact" id="contact" data-animate>
+    <!-- Contact Section -->
+    <section class="panel contact" id="contact" data-animate aria-labelledby="contact-heading">
       <div>
         <p class="label" data-i18n="contact.label">Contact</p>
-        <h2 data-i18n="contact.heading">Let's collaborate.</h2>
+        <h2 id="contact-heading" data-i18n="contact.heading">Let's collaborate.</h2>
         <p class="muted" data-i18n="contact.body">I partner with companies, labs, and individuals to design AI projects and software systems.</p>
+        
         <div class="contact__grid">
           <div>
             <p class="label" data-i18n="contact.emailLabel">Email</p>
-            <a class="link" href="mailto:Alessio.mezzina@phd.unict.it?subject=Project%20or%20call%20with%20Alessio%20Mezzina&body=Hi%20Alessio%2C%0D%0A%0D%0AI%27d%20like%20to%20discuss%20%5Btopic%2Fproject%5D%20and%20book%20a%20call.%0D%0A%0D%0AMy%20availability%3A%20%5Btimes%5D%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20Name%5D" data-mailto="general" data-mailto-address="Alessio.mezzina@phd.unict.it">Alessio.mezzina@phd.unict.it</a><br>
-            <a class="link" href="mailto:Alessio.mezzina01@gmail.com?subject=Project%20or%20call%20with%20Alessio%20Mezzina&body=Hi%20Alessio%2C%0D%0A%0D%0AI%27d%20like%20to%20discuss%20%5Btopic%2Fproject%5D%20and%20book%20a%20call.%0D%0A%0D%0AMy%20availability%3A%20%5Btimes%5D%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20Name%5D" data-mailto="general" data-mailto-address="Alessio.mezzina01@gmail.com">Alessio.mezzina01@gmail.com</a>
+            <a class="link" href="mailto:Alessio.mezzina@phd.unict.it" data-mailto="general" data-mailto-address="Alessio.mezzina@phd.unict.it">Alessio.mezzina@phd.unict.it</a><br>
+            <a class="link" href="mailto:Alessio.mezzina01@gmail.com" data-mailto="general" data-mailto-address="Alessio.mezzina01@gmail.com">Alessio.mezzina01@gmail.com</a>
           </div>
           <div>
             <p class="label" data-i18n="contact.phoneLabel">Phone</p>
@@ -353,32 +470,39 @@
           </div>
           <div>
             <p class="label" data-i18n="contact.linkedinLabel">LinkedIn</p>
-            <a class="link" href="https://www.linkedin.com/in/alessio-mezzina-97b9bb205" target="_blank" rel="noreferrer">linkedin.com/in/alessio-mezzina-97b9bb205</a>
+            <a class="link" href="https://www.linkedin.com/in/alessio-mezzina-97b9bb205" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/alessio-mezzina
+            </a>
           </div>
         </div>
+        
         <div class="hero__actions">
-          <a class="button" href="mailto:Alessio.mezzina@phd.unict.it?subject=Book%20a%20call%20with%20Alessio&body=Hi%20Alessio%2C%0D%0A%0D%0AI%27d%20like%20to%20book%20a%20call%20about%20%5Btopic%5D.%0D%0A%0D%0AHere%20are%20a%20few%20time%20slots%20that%20work%20for%20me%3A%20%5Btimes%5D.%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20Name%5D" data-i18n="contact.bookCall" data-mailto="bookCall" data-mailto-address="Alessio.mezzina@phd.unict.it">Book a call</a>
+          <a class="button" href="mailto:Alessio.mezzina@phd.unict.it" data-i18n="contact.bookCall" data-mailto="bookCall" data-mailto-address="Alessio.mezzina@phd.unict.it">Book a call</a>
           <a class="button ghost" href="#top" data-i18n="contact.backToTop">Back to top</a>
         </div>
       </div>
     </section>
 
-    <section class="panel" id="play" data-animate>
+    <!-- Snake Game Section -->
+    <section class="panel" id="play" data-animate aria-labelledby="lab-heading">
       <div class="panel__head">
         <p class="label" data-i18n="lab.label">Lab</p>
-        <h2 data-i18n="lab.heading">Feel Bored? have a round of snake:</h2>
+        <h2 id="lab-heading" data-i18n="lab.heading">Feel Bored? have a round of snake:</h2>
       </div>
+      
       <div class="snake-wrap">
         <div class="snake-meta">
           <div class="pill"><span data-i18n="lab.score">Score</span>: <span id="snake-score">0</span></div>
           <div class="pill"><span data-i18n="lab.best">Best</span>: <span id="snake-best">0</span></div>
         </div>
+        
         <div class="snake-board">
           <canvas id="snake-canvas" width="360" height="360" aria-label="Snake game" data-i18n-attr="aria-label" data-i18n-attr-key="lab.canvasLabel"></canvas>
         </div>
+        
         <div class="snake-controls">
           <button class="button ghost small-btn" id="snake-start" type="button" data-i18n="lab.startReset">Start / Reset</button>
-          <div class="pad">
+          <div class="pad" role="group" aria-label="Game controls">
             <button class="pad-btn" data-dir="up" aria-label="Up" data-i18n-attr="aria-label" data-i18n-attr-key="lab.pad.up">↑</button>
             <div class="pad-middle">
               <button class="pad-btn" data-dir="left" aria-label="Left" data-i18n-attr="aria-label" data-i18n-attr-key="lab.pad.left">←</button>
@@ -391,14 +515,23 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div>© Alessio Mezzina</div>
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div>© <span id="current-year">2026</span> Alessio Mezzina</div>
     <div class="footer__links">
-      <a href="mailto:Alessio.mezzina@phd.unict.it?subject=Project%20or%20call%20with%20Alessio%20Mezzina&body=Hi%20Alessio%2C%0D%0A%0D%0AI%27d%20like%20to%20discuss%20%5Btopic%2Fproject%5D%20and%20book%20a%20call.%0D%0A%0D%0AMy%20availability%3A%20%5Btimes%5D%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20Name%5D" data-i18n="footer.email" data-mailto="general" data-mailto-address="Alessio.mezzina@phd.unict.it">Email</a>
+      <a href="mailto:Alessio.mezzina@phd.unict.it" data-i18n="footer.email" data-mailto="general" data-mailto-address="Alessio.mezzina@phd.unict.it">Email</a>
+      <a href="https://github.com/AlessioMezzina" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/alessio-mezzina-97b9bb205" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="#top" data-i18n="footer.top">Top</a>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js"></script>
+  
+  <!-- Update year dynamically -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

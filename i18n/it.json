@@ -10,7 +10,8 @@
     "contact": "Contatti",
     "email": "Email",
     "cta": "Parliamone",
-    "languageLabel": "Selezione lingua"
+    "languageLabel": "Selezione lingua",
+    "themeToggle": "Attiva/disattiva tema scuro"
   },
   "hero": {
     "badge": "AI generativa / Metaeuristiche / Ottimizzazione / Ricerca applicata",
