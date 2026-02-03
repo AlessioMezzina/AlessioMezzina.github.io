@@ -120,9 +120,18 @@
       "title": "3D YOLO-like Detector for Cosmic Voids: A Multi-Scale Deep Learning Approach to Large-Scale Underdense Structures",
       "meta": "2025 - Sottomesso • in collaborazione con KOEXAI."
     },
+    "autonav": {
+      "title": "An Autonomous Navigation Framework for Item Retrieval in Unknown Environments",
+      "meta": "2026 - Sottomesso."
+    },
     "halos": {
       "title": "HALOS: Hierarchical Aggregation Learning for Overdensity Search",
       "meta": "2025 - Sottomesso • in collaborazione con KOEXAI."
+    },
+
+    "tsp_drones": {
+      "title": "Metaheuristics for the Traveling Salesman Problem and Drone-Enabled Variants: A Review",
+      "meta": "2025 - Sottomesso."
     },
     "rag": {
       "title": "Retrieval Augmented Generation with Iterative Critique: A Framework for Structured Task Solving",
@@ -130,11 +139,11 @@
     },
     "weighted": {
       "title": "A Weighted Binary String Benchmark to Assess the Efficiency of Stochastic Search Processes",
-      "meta": "2025 - ICSI 2025 — presentato a Yokohama, premio Best Student Paper • DOI: 10.1007/978-981-95-0982-9_10."
+      "meta": "2025 - ICSI 2025 — presentato a Yokohama, premio Best Student Paper."
     },
     "tabu": {
       "title": "A Real-Time Adaptive Tabu Search for Handling Zoom In/Out in Map Labeling Problem",
-      "meta": "2025 - LION18 • DOI: 10.1007/978-3-031-75623-8_9."
+      "meta": "2025 - LION18."
     },
     "more": {
       "title": "In arrivo",
